@@ -1,120 +1,266 @@
-div
-{
-    border-radius: 5px;
-    }
-#header
-{
-    position: fixed;
-    z-index: 1;
-    height:40px;
-    width: 98%;
-    background-color: #668284;
-    margin-bottom: 10px
-    }
-
-#name {
-    float:left;
-	margin-left: 20px;
-	padding-bottom: 10px;
-	font-size: 16px;
-	font-family: Verdana, sans-serif;
-	color: #ffffff;
+* {
+  box-sizing: border-box;
+  transition: 0.35s ease;
 }
-
-#email{
-    float:right;
-    margin-right: 20px;
-	padding-bottom: 10px;
-	font-size: 16px;
-	font-family: Verdana, sans-serif;
-	color: #ffffff;
+.rela-block {
+  display: block;
+  position: relative;
+  margin: auto;
+  top: top;
+  left: left;
+  right: right;
+  bottom: bottom;
 }
-
-#contact
-{
-    margin-left:45%;
-    padding-bottom: 10px;
-	font-size: 16px;
-	font-family: Verdana, sans-serif;
-	color: #ffffff;
-    }
-
-a:hover {
-    font-weight: bold;
+.rela-inline {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  top: top;
+  left: left;
+  right: right;
+  bottom: bottom;
 }
-
-.right
-{
-    float: left;
-    margin-top: 50px;
-    padding-left:5px;
-    /*margin-right: -10px;
-    margin-left: 14%;*/
-    height: auto;
-    width: 99%;
-    background-color: #E3EDD8;
-    }
-
-/*.left
-{
-    float: left;
-    margin-top: 50px;
-    /*margin-right: -90px;
-    height: relative;
-    width: 10%;
-    background-color: #4160E8;
-    }*/
-    
-#footer
-{
-    height:40px;
-    clear:both;
-    position: relative;
-    background-color: #C1E3E1;
-    }
-    
-h3
-{
-    text-decoration: underline;
-    }
-
-#job-responsibilities
-{
-    padding: 1px;
-    }
-.job-title
-{
-    font-weight: bold;
-    }
-table
-{
-    border: 1px dashed black;
-    }
-td
-{
-    padding: 2px;
-    border: 1px solid #E88741;
-    }
-
-#course-name
-{
-    font-weight:bold;
-    }
-
-#company-name
-{
-    height:2px;
-    text-decoration:underline;
-    }
-#job-title
-{
-    height: 5px;
-    }
-.job-duration
-{
-    float:right;
-    }
-#heading
-{
-    font-weight:bold;
-    }
+.floated {
+  display: inline-block;
+  position: relative;
+  margin: false;
+  top: top;
+  left: left;
+  right: right;
+  bottom: bottom;
+  float: none;
+}
+.abs-center {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: 50%;
+  left: 50%;
+  right: false;
+  bottom: false;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 88%;
+}
+body {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  line-height: 28px;
+  background: url("http://kingofwallpapers.com/leaves/leaves-016.jpg") right no-repeat;
+  background-size: cover;
+}
+body:before {
+  content: "";
+  display: false;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.92);
+}
+.caps {
+  text-transform: uppercase;
+}
+.justified {
+  text-align: justify;
+}
+p.light {
+  color: #777;
+}
+h2 {
+  font-family: 'Open Sans';
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #000;
+}
+h3 {
+  font-family: 'Open Sans';
+  font-size: 21px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #000;
+}
+.page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  background-color: #fff;
+  box-shadow: 6px 10px 28px 0px rgba(0,0,0,0.4);
+}
+.top-bar {
+  height: 220px;
+  background-color: #808080;
+  color: Black;
+}
+.name {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: false;
+  left: calc(350px + 5%);
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 58px;
+  letter-spacing: 8px;
+  font-weight: 100;
+  line-height: 60px;
+}
+.name div {
+  width: 94%;
+}
+.side-bar {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: 60px;
+  left: 5%;
+  right: false;
+  bottom: 0;
+  width: 350px;
+  background-color: #808080;
+  padding: 320px 30px 50px;
+}
+.mugshot {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: 50px;
+  left: 70px;
+  right: false;
+  bottom: false;
+  height: 210px;
+  width: 210px;
+}
+.mugshot .logo {
+  margin: -23px;
+}
+.logo {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: 0;
+  left: 0;
+  right: false;
+  bottom: false;
+  z-index: 100;
+  margin: 0;
+  color: #000;
+  height: 250px;
+  width: 250px;
+}
+.logo .logo-svg {
+  height: 100%;
+  width: 100%;
+  stroke: #000;
+  cursor: pointer;
+}
+.logo .logo-text {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: 58%;
+  left: left;
+  right: 16%;
+  bottom: bottom;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 55px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  line-height: 58.333333333333336px;
+}
+.social {
+  padding-left: 60px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.social:before {
+  content: "";
+  display: false;
+  position: absolute;
+  margin: false;
+  top: -4px;
+  left: 10px;
+  right: false;
+  bottom: false;
+  height: 35px;
+  width: 35px;
+  background-size: cover !important;
+}
+.social.twitter:before {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") center no-repeat;
+}
+.social.pinterest:before {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") center no-repeat;
+}
+.social.linked-in:before {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
+}
+.side-header {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 60px auto 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #888;
+}
+.list-thing {
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.content-container {
+  margin-right: 0;
+  width: calc(95% - 350px);
+  padding: 25px 40px 50px;
+}
+.content-container > * {
+  margin: 0 auto 25px;
+}
+.content-container > h3 {
+  margin: 0 auto 5px;
+}
+.content-container > p.long-margin {
+  margin: 0 auto 50px;
+}
+.title {
+  width: 80%;
+  text-align: center;
+}
+.separator {
+  width: 240px;
+  height: 2px;
+  background-color: #999;
+}
+.greyed {
+  background-color: #ddd;
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-weight: 600;
+  line-height: 28px;
+}
+@media screen and (max-width: 1150px) {
+  .name {
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-weight: 100;
+    line-height: 48px;
+  }
+}
